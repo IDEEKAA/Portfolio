@@ -21,29 +21,16 @@ for(const star of document.getElementsByClassName("magic-star")) {
     }, index++ * (interval / 3))
 }
 
-/* -- ↓↓↓ If you want the sparkle effect to only occur on hover, replace lines 16 and on with this code ↓↓↓ -- */
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
 
-// let timeouts = [],
-//     intervals = [];
-
-// const magic = document.querySelector(".magic");
-
-// magic.onmouseenter = () => {
-//   let index = 1;
-
-//   for(const star of document.getElementsByClassName("magic-star")) {
-//     timeouts.push(setTimeout(() => {
-//       animate(star);
-
-//       intervals.push(setInterval(() => animate(star), 1000));
-//     }, index++ * 300));
-//   };
-// }
-
-// magic.onmouseleave = onMouseLeave = () => {
-//   for(const t of timeouts) clearTimeout(t);
-//   for(const i of intervals) clearInterval(i);
-
-//   timeouts = [];
-//   intervals = [];
-// }
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link")
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab")
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}

@@ -43,19 +43,62 @@
         </div>
     </div>
 </div>
+<!----------ABOUT-------->
 <div id="about">
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="images/user.jpg" width="25%">
+                <img src="images/user.jpg">
             </div>
             <div class="about-col-2">
-                <h1>À propos</h1>
+                <h1 class="sub-title">À propos</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Vivamus tempus libero in purus sagittis, in dignissim velit gravida.
+                    Donec accumsan justo sed odio laoreet, ut feugiat dolor congue.
+                    Nulla purus risus, fringilla et consectetur sed, tincidunt a quam.
+                    Mauris felis libero, imperdiet sed arcu id, porta rhoncus sem.
+                    Phasellus dictum elit sed sapien mattis tincidunt at eu leo.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Compétence</p>
+                    <p class="tab-links" onclick="opentab('experience')">Expérience</p>
+                    <p class="tab-links" onclick="opentab('education')">Educations</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>HTML/CSS/JS</span><br>Site</li>
+                        <li><span>PHP</span><br>Site et application</li>
+                        <li><span>JAVA</span><br>Application</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2020</span><br>Acteur de compléments</li>
+                        <li><span>été 2021 - été 2022</span><br>Employés polyvalents chez McDonald's</li>
+                        <li><span>2023</span><br>Bafa</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2019-2021</span><br>STI2D</li>
+                        <li><span>2022-2023</span><br>BTS SIO</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-
 </div>
+<!------------- Stage --------------->
+
+<div id="stage">
+    <div class="container">
+        <h1 class="sub-title">Mes stage</h1>
+        <div class="service-list">
+
+        </div>
+    </div>
+</div>
+
 <script src="script.js"></script>
 </body>
 </html>
