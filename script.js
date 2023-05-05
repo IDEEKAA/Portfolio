@@ -34,3 +34,17 @@ function opentab(tabname){
     event.currentTarget.classList.add("active-link");
     document.getElementById(tabname).classList.add("active-tab");
 }
+
+var tablinksbis = document.getElementsByClassName("tab-links-bis");
+var tabcontentsbis = document.getElementsByClassName("tab-contents-bis");
+
+function opentab2(tabnamebis){
+    for(tablinkbis of tablinksbis){
+        tablinkbis.classList.remove("active-link-bis")
+    }
+    for(tabcontentbis of tabcontentsbis){
+        tabcontentbis.classList.remove("active-tab-bis")
+    }
+    event.currentTarget.classList.add("active-link-bis");
+    document.getElementById(tabnamebis).classList.add("active-tab-bis");
+}

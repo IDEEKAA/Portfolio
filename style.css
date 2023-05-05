@@ -296,3 +296,108 @@ h1 > .magic > .magic-text {
 .tab-contents.active-tab{
     display: block;
 }
+
+/*----------- Stage ------------*/
+
+#stage{
+    color: #ababab;
+}
+
+.row2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-2-bis{
+    flex-basis: 35%;
+    margin-top: 10%;
+
+}
+
+.about-col-2-bis img{
+    width: 60%;
+    border-radius: 15px;
+}
+
+.about-col-1-bis{
+    flex-basis: 65%;
+    margin-top: 10%;
+}
+
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.tab-titles-bis{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links-bis{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links-bis::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links-bis.active-link-bis::after{
+    width: 50%;
+}
+
+.tab-contents-bis ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents-bis ul li span{
+    color: #b54769;
+    font-size: 14px;
+}
+
+.tab-contents-bis{
+    display: none;
+}
+
+.tab-contents-bis.active-tab-bis {
+    display: block;
+}
+
+/* ------------ Portfolio --------*/
+
+#portfolio{
+    padding: 50px 0;
+}
+
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
