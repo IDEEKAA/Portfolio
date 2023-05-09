@@ -48,3 +48,13 @@ function opentab2(tabnamebis){
     event.currentTarget.classList.add("active-link-bis");
     document.getElementById(tabnamebis).classList.add("active-tab-bis");
 }
+
+var sidemenu = document.getElementById("sidemenu")
+
+function openmenu(){
+    sidemenu.style.right = "0";
+}
+
+function closemenu(){
+    sidemenu.style.right = "-200px";
+}
